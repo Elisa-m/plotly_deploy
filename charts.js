@@ -104,10 +104,10 @@ function buildCharts(sample) {
     // D1-8. Create the trace for the bar chart. 
     var barData = [{
       type: 'bar',
-      x: [xvalues],
-      y: [yticks],
+      x: xvalues,
+      y: yticks,
       orientation: 'h',
-      text: [labels]
+      text: labels
     }];
 
     // D1-9. Create the layout for the bar chart. 
@@ -120,13 +120,13 @@ function buildCharts(sample) {
 
     // D2-1. Create the trace for the bubble chart.
     var bubbleData = [{
-      x: [otuIds],
-      y: [sampleValues],
-      text: [otuLabels],
+      x: otuIds,
+      y: sampleValues,
+      text: otuLabels,
       mode: "markers",
       marker: {
-          size: [sampleValues],
-          color: [otuIds],
+          size: sampleValues,
+          color: otuIds,
           colorscale: 'Portland',
       }
     }];
